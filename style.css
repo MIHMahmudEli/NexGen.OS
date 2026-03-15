@@ -150,18 +150,19 @@ aside {
 .theme-grid {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 6px 10px;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 8px;
     border-radius: 20px;
     width: fit-content;
     margin: 0 auto;
 }
 
 .theme-swatch {
-    width: 30px;
-    height: 30px;
-    border-radius: 12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 10px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -172,8 +173,8 @@ aside {
 }
 
 .theme-swatch i {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
 }
 
 .theme-swatch:hover, .theme-swatch.active {
