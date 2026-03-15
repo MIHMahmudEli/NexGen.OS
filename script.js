@@ -142,7 +142,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="icon-wrapper">
                         <img src="${getFaviconUrl(b.url)}" alt="">
                     </div>
-                    <i data-lucide="x" class="remove-pin"></i>
+                    <button class="remove-pin" title="Remove Link">
+                        <i data-lucide="x"></i>
+                    </button>
                 </div>
                 <div class="card-info" onclick="window.open('${b.url}', '_blank')">
                     <h3>${b.title}</h3>
@@ -160,6 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Delete Event
             const deleteBtn = card.querySelector('.remove-pin');
             deleteBtn.addEventListener('click', (e) => {
+                e.preventDefault();
                 e.stopPropagation();
                 deletePin(b.url);
             });
