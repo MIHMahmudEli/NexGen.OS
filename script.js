@@ -70,13 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderPins();
     });
 
-    const updateGreeting = () => {
-        const hour = new Date().getHours();
-        const user = "Mohsin";
-        if (hour < 12) greetingText.innerText = `Morning, ${user}`;
-        else if (hour < 18) greetingText.innerText = `Afternoon, ${user}`;
-        else greetingText.innerText = `Evening, ${user}`;
-    };
 
     const saveAndSync = () => {
         localStorage.setItem('myBookmarkHub_pins', JSON.stringify(bookmarks));
@@ -234,7 +227,6 @@ document.addEventListener('DOMContentLoaded', () => {
     searchInput.oninput = renderPins;
 
     initTheme();
-    updateGreeting();
     renderSidebar();
     renderPins();
 });
