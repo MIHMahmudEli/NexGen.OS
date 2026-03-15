@@ -214,13 +214,14 @@ main { flex: 1; padding: 2.5rem 4rem; max-width: 1400px; margin: 0 auto; }
     transition: var(--transition-smooth);
 }
 
-.command-box i {
+.command-box i, .command-box svg {
     width: 14px;
     height: 14px;
     color: var(--text-dim);
     opacity: 0.85;
     margin-left: 10px;
     margin-right: 4px;
+    stroke-width: 2.5px;
     flex-shrink: 0;
 }
 
@@ -316,10 +317,11 @@ main { flex: 1; padding: 2.5rem 4rem; max-width: 1400px; margin: 0 auto; }
     outline: none;
 }
 
-.remove-pin i {
+.remove-pin i, .remove-pin svg {
     width: 14px;
     height: 14px;
     pointer-events: none;
+    stroke-width: 3px; /* Slightly thicker for the delete button */
 }
 .card:hover .remove-pin { opacity: 1; }
 .remove-pin:hover { color: #ff4d4d; background: rgba(255, 77, 77, 0.1); }
