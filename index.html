@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen | Developer OS</title>
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="midnight">
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside>
+            <div class="sidebar-header">
+                <div class="brand">
+                    <i data-lucide="terminal"></i>
+                    <span>NexGen.OS</span>
+                </div>
+            </div>
+
+            <div class="sidebar-scrollable" id="sidebar-categories">
+                <!-- Categories injected here -->
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="theme-grid" id="theme-switcher">
+                    <div class="theme-swatch active" data-theme="midnight" style="color: #a855f7;" title="Midnight Purple">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <div class="theme-swatch" data-theme="emerald" style="color: #10b981;" title="Emerald Green">
+                        <i data-lucide="leaf"></i>
+                    </div>
+                    <div class="theme-swatch" data-theme="solar" style="color: #fb7185;" title="Solar Flame">
+                        <i data-lucide="flame"></i>
+                    </div>
+                    <div class="theme-swatch" data-theme="ocean" style="color: #38bdf8;" title="Ocean Waves">
+                        <i data-lucide="waves"></i>
+                    </div>
+                    <div class="theme-swatch" data-theme="sunset" style="color: #f472b6;" title="Neon Palette">
+                        <i data-lucide="palette"></i>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Dashboard -->
+        <main>
+            <header class="top-bar">
+                <div class="greeting">
+                    <h1 id="greeting-text">Welcome back, Mohsin</h1>
+                </div>
+
+                <div class="header-actions">
+                    <div class="command-box search-box">
+                        <i data-lucide="search" style="margin-left: 1rem; color: var(--text-dim);"></i>
+                        <input type="text" id="search-proxy" placeholder="Search...">
+                    </div>
+
+                    <div class="command-box">
+                        <i data-lucide="link" style="margin-left: 1rem; color: var(--text-dim);"></i>
+                        <input type="text" id="auto-pin-input" placeholder="Paste URL...">
+                        <button class="pin-btn" id="sync-btn">
+                            <i data-lucide="zap"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Grid -->
+            <div class="grid-container" id="pin-grid">
+                <!-- Pins injected here -->
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
