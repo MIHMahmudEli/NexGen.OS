@@ -207,10 +207,21 @@ main { flex: 1; padding: 2.5rem 4rem; max-width: 1400px; margin: 0 auto; }
     flex: 1;
     background: var(--card-glass);
     border: 1px solid var(--glass-border);
-    border-radius: 16px;
-    padding: 0.5rem;
+    border-radius: 12px;
+    padding: 2px 4px; /* Reduced side padding to handle icon margin */
     display: flex;
     align-items: center;
+    transition: var(--transition-smooth);
+}
+
+.command-box i {
+    width: 14px;
+    height: 14px;
+    color: var(--text-dim);
+    opacity: 0.85;
+    margin-left: 10px;
+    margin-right: 4px;
+    flex-shrink: 0;
 }
 
 .command-box:focus-within { border-color: var(--accent-primary); box-shadow: 0 0 20px var(--mesh-1); }
